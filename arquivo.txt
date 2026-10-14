@@ -1,0 +1,27 @@
+Projeto Final: Sistema Inteligente de Gestão de Escalas de Motoristas
+
+O projeto consiste no desenvolvimento de um site integrado ao sistema interno de uma empresa de ônibus, com o objetivo de reduzir os furos de escala,
+facilitando a identificação de motoristas substitutos.
+
+A plataforma consultará informações sobre a disponibilidade dos motoristas, as linhas que já realizaram, os treinamentos e a capacitação para cada tipo de ônibus.
+
+Com o auxílio da Inteligência Artificial (IA), o sistema analisará esses dados e recomendará motoristas aptos para preencher escalas descobertas, considerando a disponibilidade,
+a experiência e os requisitos operacionais.
+
+Dessa forma, espera-se agilizar a substituição de motoristas, reduzir o trabalho manual e melhorar a organização e a eficiência da operação da empresa.
+
+SISTEMA MOTORIATA + TRÁFEGO
+
+1- Motorista faz o login (matrícula + senha)
+2- Layout
+|- Campo esquerdo:
+   |- Inicio;
+   |- Escalas;
+   |- Motoristas;
+   |- Linhas;
+   |- Relatórios;
+   |- Configurações.
+|- Campo direito:
+   |- Soluções sugeridas;
+   |- Perfil do motorista + status;
+   |- Outras opções + Perfis (motoristas).
