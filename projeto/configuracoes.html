@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações | Motorista Tráfego</title>
+        <!-- Fontes do projeto -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+        <!-- Arquivo CSS separado -->
+    <link rel="stylesheet" href="css/configuracoes.css">
+</head>
+<body>
+
+        <!-- Menu Superior (Navegação) -->
+        <header class="top-bar">
+            <div class="brand">Motorsta Tráfego</div>
+            <nav class="nav-menu">
+                <a href="dashnoard.html" class="nav-item">Início</a>
+                <a href="escalas.html" class="nav-item">Escalas</a>
+                <a href="motoristas.html" class="nav-item">Motoristas</a>
+                <a href="linhas.html" class="nav-item">Linhas</a>
+                <a href="relatorios.html" class="nav-item">Relatórios</a>
+                <a href="configuracoes.html" class="nav-item active">Configurações</a>
+            </nav>
+            <a href="login.html" class="logout-bnt">Sair</a>
+        </header>
+
+        <!-- Conteúdo Principal -->
+        <main class="main-content">
+
+            <!-- Título-->
+            <div class="header-content">
+                <div>
+                    <h1>Configurações do Sistema</h1>
+                    <p>Ajuste as preferências da plataforma, regras da IA e parâmetros de escala.</p>
+                </div>
+            </div>
+
+            <!-- Seções de Configuração-->
+            <section class="lista-configuracoes">
+
+                <!--Cartão 1: Regras da Inteligência Artificial-->
+                <div class="cartao-config">
+                    <h2>Rgras de Recomendação da IA</h2>
+                    <p>Defina o que a Inteligência Artificial deve priorizar ao sugerir um motorista substituto</p>
+
+                    <div class="campo">
+                        <label>Tempo mínimo de descanso do motorista (horas):</label>
+                        <input type="number" value="11">
+                    </div>
+
+                    <div class="campo">
+                        <label>Priorizar motoristas que moram perto do terminal?</label>
+                        <select>
+                            <option value="sim" selected>Sim, priorizar proximidade</option>
+                            <option value="nao">Não, avaliar apenas aptidão técnica</option>
+                        </select>
+                    </div>
+
+                        <button class="btn btn-primary">Salvar Regras da IA</button>
+                    </div>
+
+                    <!-- Cartão 2: Notificações e Alertas -->
+            <div class="cartao-config">
+                <h2>Notificações de Furos de Escala</h2>
+                <p>Escolha como o sistema deve avisar a equipe quando houver um furo não preenchido.</p>
+                
+                <div class="campo-checkbox">
+                    <input type="checkbox" id="alertaTela" checked>
+                    <label for="alertaTela">Exibir alerta sonoro e na tela em furos críticos</label>
+                </div>
+
+                <div class="campo-checkbox">
+                    <input type="checkbox" id="alertaSms" checked>
+                    <label for="alertaSms">Enviar SMS automático para o motorista recomendado</label>
+                </div>
+
+                <button class="btn btn-primary">Salvar Notificações</button>
+            </div>
+
+                    <!-- Cartão 3: Notificações e Alertas -->
+                    <div class="cartao-config">
+                        <h2>Segurança e Senha</h2>
+                        <p>Atualize os seus dados de acesso ao sistema de tráfego.</p>
+                        
+                        <div class="campo">
+                            <label>Senha Atual:</label>
+                            <input type="password" placeholder="Digite sua senha atual">
+                        </div>
+        
+                        <div class="campo">
+                            <label>Nova Senha:</label>
+                            <input type="password" placeholder="Digite a nova senha">
+                        </div>
+        
+                        <button class="btn btn-secondary">Alterar Senha</button>
+                    </div>
+
+
+                </div>
+            </section>
+
+
+
+
+</body>
+</html>

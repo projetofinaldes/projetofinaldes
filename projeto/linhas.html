@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linhas de Ônibus | Motorista Tráfego</title>
+    <!-- Fontes do projeto -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Arquivo CSS separado -->
+    <link rel="stylesheet" href="css/linhas.css">
+</head>
+<body>
+
+    <!-- Menu Superior (Navegação) -->
+    <header class="top-bar">
+        <div class="brand">Motorista Tráfego</div>
+        <nav class="nav-menu">
+            <a href="dashboard.html" class="nav-item">Início</a>
+            <a href="escalas.html" class="nav-item">Escalas</a>
+            <a href="motoristas.html" class="nav-item">Motoristas</a>
+            <a href="linhas.html" class="nav-item active">Linhas</a>
+            <a href="relatorios.html" class="nav-item">Relatórios</a>
+            <a href="configuracoes.html" class="nav-item">Configurações</a>
+        </nav>
+        <a href="login.html" class="logout-btn">Sair</a>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="main-content">
+        
+        <!-- Título e Ação -->
+        <div class="header-content">
+            <div>
+                <h1>Gestão de Linhas de Ônibus</h1>
+                <p>Veja as informações básicas de cada linha de ônibus da empresa.</p>
+            </div>
+            <button class="btn btn-primary">
+                + Cadastrar Nova Linha
+            </button>
+        </div>
+
+        <!-- Lista de Linhas (Feita com DIVs simples) -->
+        <section class="lista-linhas">
+
+            <!-- Linha 1 -->
+            <div class="cartao-linha">
+                <div class="codigo-linha">303</div>
+                <div class="detalhes-linha">
+                    <h2>CENTENÁRIO / CAMPO COMPRIDO</h2>
+                    <p><strong>Tipo de Ônibus:</strong> Biarticulado</p>
+                    <p><strong>Carteira Exigida:</strong> CNH E</p>
+                    <p><strong>Treinamento:</strong> Corredor BRT</p>
+                    <p><strong>Status:</strong> <span class="status com-furo">1 Furo Pendente</span></p>
+                </div>
+                <button class="btn btn-secondary">Recomendar com IA</button>
+            </div>
+
+            <!-- Linha 2 -->
+            <div class="cartao-linha">
+                <div class="codigo-linha">203</div>
+                <div class="detalhes-linha">
+                    <h2>SANTA CÂNDIDA / CAPÃO RASO</h2>
+                    <p><strong>Tipo de Ônibus:</strong> Biarticulado</p>
+                    <p><strong>Carteira Exigida:</strong> CNH E</p>
+                    <p><strong>Treinamento:</strong> Corredor BRT</p>
+                    <p><strong>Status:</strong> <span class="status ok">Escala Completa</span></p>
+                </div>
+                <button class="btn btn-secondary">Ver Detalhes</button>
+            </div>
+
+            <!-- Linha 3 -->
+            <div class="cartao-linha">
+                <div class="codigo-linha">020</div>
+                <div class="detalhes-linha">
+                    <h2>INTERBAIRROS II (HORÁRIO)</h2>
+                    <p><strong>Tipo de Ônibus:</strong> Articulado</p>
+                    <p><strong>Carteira Exigida:</strong> CNH E</p>
+                    <p><strong>Treinamento:</strong> Direção Defensiva Urbana</p>
+                    <p><strong>Status:</strong> <span class="status com-furo">1 Furo Pendente</span></p>
+                </div>
+                <button class="btn btn-secondary">Recomendar com IA</button>
+            </div>
+
+            <!-- Linha 4 -->
+            <div class="cartao-linha">
+                <div class="codigo-linha">502</div>
+                <div class="detalhes-linha">
+                    <h2>CIRCULAR SUL (HORÁRIO)</h2>
+                    <p><strong>Tipo de Ônibus:</strong> Articulado</p>
+                    <p><strong>Carteira Exigida:</strong> CNH D ou E</p>
+                    <p><strong>Treinamento:</strong> Estação Tubo</p>
+                    <p><strong>Status:</strong> <span class="status com-furo">1 Furo Pendente</span></p>
+                </div>
+                <button class="btn btn-secondary">Recomendar com IA</button>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
