@@ -54,3 +54,15 @@ const linhasOnibus = [
     function listarLinhas() {
         return linhasOnibus;
 }
+
+    function contarLinhasComFuro() {
+        return listarLinhasComFuro().length;
+}
+
+    function mostrarResumoLinhas() {
+        return {
+            total: listarLinhas().length,
+            comFuro: contarLinhasComFuro(),
+            semFuro: listarLinhas().length - contarLinhasComFuro()
+    };
+}
