@@ -37,3 +37,20 @@ const linhasOnibus = [
         origem: "cadastro atual do projeto"
     }
 ];
+
+    // Função para buscar uma linha pelo código
+    function buscarLinha(codigo) {
+        return linhasOnibus.find(function (linha) {
+        return linha.codigo === codigo;
+   });
+}
+
+    function listarLinhasComFuro() {
+        return linhasOnibus.filter(function (linha) {
+        return linha.status === "com-furo";
+    });
+}
+
+    function listarLinhas() {
+        return linhasOnibus;
+}
