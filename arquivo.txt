@@ -1,29 +1,39 @@
-Projeto Final: Sistema Inteligente de Gestão de Escalas de Motoristas
+🐾 AdotePet — Site de Adoção de Animais
 
-O projeto consiste no desenvolvimento de um site integrado ao sistema interno de uma empresa de ônibus, com o objetivo de reduzir os furos de escala,
-facilitando a identificação de motoristas substitutos.
+📌 Sobre o projeto
+O AdotePet é um site desenvolvido para facilitar a adoção responsável de animais, conectando pessoas interessadas em adotar cães e gatos a protetores independentes e organizações de proteção animal.
+A plataforma permite visualizar animais disponíveis para adoção, consultar suas informações e entrar em contato com os responsáveis por meio do WhatsApp.
+O projeto busca incentivar a adoção responsável, facilitar a divulgação de animais e centralizar as informações em um único lugar.
 
-A plataforma consultará informações sobre a disponibilidade dos motoristas, as linhas que já realizaram, os treinamentos e a capacitação para cada tipo de ônibus.
+🎯 Objetivos
+Facilitar o encontro entre animais disponíveis e possíveis adotantes.
+Divulgar informações e fotos dos animais.
+Permitir o contato direto com os responsáveis por meio do WhatsApp.
+Organizar os cadastros de animais e usuários.
+Registrar e acompanhar solicitações de adoção.
+Oferecer uma interface simples, intuitiva e responsiva.
 
-Com o auxílio da Inteligência Artificial (IA), o sistema analisará esses dados e recomendará motoristas aptos para preencher escalas descobertas, considerando a disponibilidade,
-a experiência e os requisitos operacionais.
+⚙️ Funcionalidades
+Página inicial do site.
+Estrutura para exibição dos animais disponíveis.
+Cadastro e login de usuários.
+Cadastro, edição e remoção de animais.
+Filtros por espécie, idade e porte.
+Integração com WhatsApp para contato com os responsáveis.
+Banco de dados para armazenar as informações.
+Formulário de interesse em adoção.
+Acompanhamento do status das solicitações.
+Painel administrativo para gerenciamento dos cadastros.
+Layout responsivo para computadores, tablets e celulares.
+Observação: os itens marcados como concluídos devem ser atualizados conforme as funcionalidades forem realmente implementadas.
 
-Dessa forma, espera-se agilizar a substituição de motoristas, reduzir o trabalho manual e melhorar a organização e a eficiência da operação da empresa.
+🛠️ Tecnologias utilizadas
+HTML5: estrutura das páginas.
+CSS3: estilização e responsividade.
+JavaScript: interatividade e comunicação com o servidor.
+Node.js: execução do back-end.
+Express: criação das rotas e da API.
+PostgreSQL: armazenamento dos dados.
+Git e GitHub: versionamento e compartilhamento do código.
 
-SISTEMA MOTORIATA + TRÁFEGO
 
-1- Motorista faz o login (matrícula + senha)
-2- Layout
-|- Campo esquerdo:
-   |- Inicio;
-   |- Escalas;
-   |- Motoristas;
-   |- Linhas;
-   |- Relatórios;
-   |- Configurações.
-|- Campo direito:
-   |- Soluções sugeridas;
-   |- Perfil do motorista + status;
-   |- Outras opções + Perfis (motoristas).
-
-   ** ADICIONAR TODAS AS LINHAS CERTAS **
