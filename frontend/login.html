@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar | AdotePet</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pagina-login">
+
+    <header class="cabecalho">
+        <a href="index.html" class="logo">🐾 AdotePet</a>
+
+        <nav class="menu">
+            <a href="index.html">Início</a>
+            <a href="animais.html">Animais</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="cadastro.html">Cadastre-se</a>
+        </nav>
+    </header>
+
+    <main class="login-container">
+        <section class="login-card">
+            <a href="index.html" class="voltar-inicio">
+                ← Voltar para o início
+            </a>
+
+            <div class="login-icone">🐾</div>
+
+            <h1>Bem-vindo de volta!</h1>
+
+            <p class="login-descricao">
+                Entre na sua conta para continuar sua jornada
+                de adoção com o AdotePet.
+            </p>
+
+            <form id="formLogin">
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Digite seu e-mail"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="senha">Senha</label>
+                    <input
+                        type="password"
+                        id="senha"
+                        name="senha"
+                        placeholder="Digite sua senha"
+                        autocomplete="current-password"
+                        required
+                    >
+                </div>
+
+                <button type="submit" class="botao botao-principal botao-entrar">
+                    Entrar na minha conta
+                </button>
+            </form>
+
+            <p class="cadastro-link">
+                Ainda não tem uma conta?
+                <a href="cadastro.html">Cadastre-se</a>
+            </p>
+
+            <div class="mensagem-login" id="mensagemLogin" role="status"></div>
+        </section>
+    </main>
+
+    <footer class="rodape rodape-login">
+        <p>© 2026 AdotePet — Adotar é um ato de amor.</p>
+    </footer>
+
+    <script>
+        const formLogin = document.getElementById("formLogin");
+        const mensagemLogin = document.getElementById("mensagemLogin");
+
+        formLogin.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            mensagemLogin.textContent =
+                "A tela está pronta! A autenticação precisa ser conectada ao servidor.";
+
+            mensagemLogin.style.display = "block";
+        });
+    </script>
+
+</body>
+</html>

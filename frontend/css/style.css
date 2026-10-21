@@ -1,0 +1,459 @@
+/* PALETA DE CORES DO ADOTEPET */
+:root {
+    --azul-marinho: #00325F;
+    --laranja-queimado: #C65801;
+    --verde-musgo: #455620;
+    --verde-oliva: #899968;
+    --marrom-cafe: #573D30;
+    --cinza-claro: #F2F1ED;
+    --branco: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cinza-claro);
+    color: var(--marrom-cafe);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+    background-color: var(--azul-marinho);
+    color: var(--branco);
+    padding: 18px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: var(--branco);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    color: var(--branco);
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.menu a:hover,
+.menu a.ativo {
+    color: #E8B18B;
+}
+
+.menu .botao-login {
+    background-color: var(--laranja-queimado);
+    padding: 9px 18px;
+    border-radius: 7px;
+}
+
+.menu .botao-login:hover {
+    background-color: var(--verde-musgo);
+    color: var(--branco);
+}
+
+/* BANNER DA PÁGINA INICIAL */
+.banner {
+    min-height: 440px;
+    padding: 70px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background-color: var(--cinza-claro);
+}
+
+.banner-conteudo {
+    flex: 1;
+    max-width: 600px;
+}
+
+.subtitulo {
+    color: var(--laranja-queimado);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.banner h1 {
+    color: var(--azul-marinho);
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.15;
+    margin: 18px 0;
+}
+
+.banner-conteudo > p {
+    max-width: 500px;
+    margin-bottom: 28px;
+}
+
+.botoes-banner {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* BOTÕES */
+.botao {
+    display: inline-block;
+    padding: 13px 22px;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao-principal {
+    background-color: var(--laranja-queimado);
+    color: var(--branco);
+}
+
+.botao-principal:hover {
+    background-color: var(--verde-musgo);
+}
+
+.botao-secundario {
+    color: var(--azul-marinho);
+    border: 2px solid var(--azul-marinho);
+    background-color: transparent;
+}
+
+.botao-secundario:hover {
+    background-color: var(--azul-marinho);
+    color: var(--branco);
+}
+
+/* DESTAQUE VISUAL DO BANNER */
+.banner-imagem {
+    flex: 1;
+    max-width: 430px;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        135deg,
+        var(--verde-oliva),
+        var(--verde-musgo)
+    );
+    border-radius: 45% 45% 18px 18px;
+    padding: 30px;
+}
+
+.imagem-destaque {
+    width: 100%;
+    background-color: var(--branco);
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.imagem-destaque span {
+    font-size: 45px;
+}
+
+.imagem-destaque h2 {
+    color: var(--azul-marinho);
+    margin: 12px 0;
+    font-size: 24px;
+}
+
+.imagem-destaque p {
+    font-size: 14px;
+}
+
+/* SEÇÃO DE BENEFÍCIOS */
+.beneficios {
+    padding: 65px 8%;
+    background-color: var(--branco);
+}
+
+.titulo-secao {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.titulo-secao h2,
+.chamada-adocao h2 {
+    color: var(--azul-marinho);
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.beneficios-lista {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.beneficio-card {
+    background-color: var(--cinza-claro);
+    padding: 28px;
+    border-radius: 12px;
+    border-bottom: 4px solid var(--verde-oliva);
+}
+
+.icone {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.beneficio-card h3 {
+    color: var(--azul-marinho);
+    margin-bottom: 10px;
+}
+
+.beneficio-card p {
+    font-size: 14px;
+}
+
+/* CHAMADA PARA ADOÇÃO */
+.chamada-adocao {
+    margin: 55px 8%;
+    padding: 35px;
+    background-color: #E4E7DC;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.chamada-adocao p {
+    max-width: 600px;
+}
+
+/* RODAPÉ */
+.rodape {
+    background-color: var(--azul-marinho);
+    color: var(--branco);
+    text-align: center;
+    padding: 28px 15px;
+}
+
+.rodape .logo {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.copyright {
+    margin-top: 12px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+/* PÁGINA DE LOGIN */
+.pagina-login {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 45px 20px;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 440px;
+    background-color: var(--branco);
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 50, 95, 0.10);
+}
+
+.voltar-inicio {
+    color: var(--azul-marinho);
+    font-size: 13px;
+}
+
+.voltar-inicio:hover {
+    color: var(--laranja-queimado);
+}
+
+.login-icone {
+    width: 65px;
+    height: 65px;
+    margin: 25px auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E4E7DC;
+    border-radius: 50%;
+    font-size: 32px;
+}
+
+.login-card h1 {
+    color: var(--azul-marinho);
+    text-align: center;
+    font-size: 27px;
+}
+
+.login-descricao {
+    text-align: center;
+    font-size: 14px;
+    margin: 10px 0 25px;
+}
+
+.campo {
+    margin-bottom: 18px;
+}
+
+.campo label {
+    display: block;
+    color: var(--marrom-cafe);
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.campo input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #D3D3D3;
+    border-radius: 7px;
+    font-size: 14px;
+    background-color: var(--branco);
+    color: var(--marrom-cafe);
+}
+
+.campo input:focus {
+    outline: 2px solid var(--verde-oliva);
+    border-color: var(--verde-musgo);
+}
+
+.botao-entrar {
+    width: 100%;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.cadastro-link {
+    text-align: center;
+    margin-top: 22px;
+    font-size: 13px;
+}
+
+.cadastro-link a {
+    color: var(--laranja-queimado);
+    font-weight: bold;
+}
+
+.cadastro-link a:hover {
+    color: var(--verde-musgo);
+}
+
+.mensagem-login {
+    display: none;
+    margin-top: 18px;
+    padding: 12px;
+    border-radius: 7px;
+    background-color: #E4E7DC;
+    color: var(--verde-musgo);
+    font-size: 13px;
+}
+
+.rodape-login {
+    margin-top: auto;
+}
+
+/* RESPONSIVIDADE PARA CELULARES E TABLETS */
+@media (max-width: 800px) {
+    .cabecalho {
+        justify-content: center;
+    }
+
+    .menu {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .banner {
+        flex-direction: column;
+        padding: 45px 6%;
+    }
+
+    .banner-conteudo {
+        max-width: 100%;
+    }
+
+    .banner-imagem {
+        width: 100%;
+        max-width: 430px;
+    }
+
+    .beneficios-lista {
+        grid-template-columns: 1fr;
+    }
+
+    .chamada-adocao {
+        margin: 35px 6%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .cabecalho {
+        padding: 18px 12px;
+    }
+
+    .menu {
+        gap: 12px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .banner h1 {
+        font-size: 32px;
+    }
+
+    .botoes-banner {
+        flex-direction: column;
+    }
+
+    .botao {
+        width: 100%;
+    }
+
+    .login-card {
+        padding: 25px 20px;
+    }
+
+    .titulo-secao h2,
+    .chamada-adocao h2 {
+        font-size: 25px;
+    }
+}

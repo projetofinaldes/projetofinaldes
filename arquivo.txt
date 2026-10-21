@@ -46,11 +46,11 @@ WhatsApp: permite que a pessoa interessada entre em contato com o responsável p
 
 collor pallet:
 
-azul marinho: #00325F
-laranja queimado: #C65801
-verde musgo: #455620
-verde oliva: #899968
-marrom café: #573D30
-cinza: #F2F1ED
+azul marinho: #00325F -> Cor principal: cabeçalho, menu e rodapé.
+laranja queimado: #C65801 -> Botões de adoção, links importantes e destaques.
+verde musgo: #455620 -> Elementos relacionados à natureza e ao cuidado.
+verde oliva: #899968 -> Ícones, etiquetas e detalhes decorativos.
+marrom café: #573D30 -> Textos secundários, bordas e detalhes.
+cinza: #F2F1ED -> Fundo das páginas e dos cartões de animais.
 
 
