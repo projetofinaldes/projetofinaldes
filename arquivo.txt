@@ -44,3 +44,13 @@ Banco de dados: guarda os animais cadastrados e, futuramente, os usuários e as 
 WhatsApp: permite que a pessoa interessada entre em contato com o responsável pelo animal.
 
 
+collor pallet:
+
+azul marinho: #00325F
+laranja queimado: #C65801
+verde musgo: #455620
+verde oliva: #899968
+marrom café: #573D30
+cinza: #F2F1ED
+
+
