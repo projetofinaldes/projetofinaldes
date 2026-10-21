@@ -36,4 +36,11 @@ Express: criação das rotas e da API.
 PostgreSQL: armazenamento dos dados.
 Git e GitHub: versionamento e compartilhamento do código.
 
+HTML: cria as páginas e os formulários.
+CSS: define as cores, os tamanhos, o posicionamento e o visual.
+JavaScript: faz os botões funcionarem, permite filtrar os animais e prepara o envio de informações.
+Back-end: recebe e processa informações enviadas pelo site.
+Banco de dados: guarda os animais cadastrados e, futuramente, os usuários e as solicitações de adoção.
+WhatsApp: permite que a pessoa interessada entre em contato com o responsável pelo animal.
+
 
